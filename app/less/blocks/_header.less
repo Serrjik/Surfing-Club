@@ -9,6 +9,14 @@
 	position: absolute;
 	top: 58px;
 	right: -50px;
+	
+	@media (max-width: 1400px) {
+		right: 30px;
+		top: 170px;
+		.site-desc__content {
+			color: #FFF;
+		}
+	}
 }
 
 .site-desc__content {
@@ -26,21 +34,14 @@
 	letter-spacing: 5.4px;
 }
 
-.header-social {
+.header-social-wrapper {
 	position: absolute;
 	right: -45px;
 	bottom: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
 	width: 20px;
-}
-
-.header-social__item {
-	margin-bottom: 34px;
 	
-	&:last-child {
-		margin-bottom: 0;
+	@media (max-width: 1400px) {
+		right: 30px;
+		bottom: 30px;
 	}
 }

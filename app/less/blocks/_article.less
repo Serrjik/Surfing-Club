@@ -81,7 +81,17 @@
 	position: absolute;
 	top: 0;
 	right: -30px;
-	
+
+	.article--even & {
+		@media (max-width: 1400px) {
+			right: 30px;
+			top: 30px;
+			.article__preview-desc__content {
+				color: #FFF;
+			}
+		}
+	}
+
 	.article--odd & {
 		right: auto;
 		left: -30px;
