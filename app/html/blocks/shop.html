@@ -1,72 +1,49 @@
 <!-- shop -->
 <section class="shop">
+	<!-- Container -->
 	<div class="container">
-
 		<h2 class="title">
 			<span class="subtitle">Shop</span>
 			Surfboards
 		</h2>
+	</div>
+	<!-- END - Container -->
+
+	<!-- Shop-slider -->
+	<div class="container shop-slider-wrapper">
 		
-		<div class="shop-slider">
-			<!-- Board -->
-			<div class="board">
-				<div class="board__img-holder">
-					<img class="board__img" src="img/boards/board-1.png" alt="Surfing board">
-				</div>
-
-				<div class="board-desc">
-					<div class="board__cat">Funboards</div>
-					<div class="board__title">Chilli Rare Bird</div>
-					
-					<div class="board-buy">
-						<div class="board-buy__price">$890</div>
-						<div class="board-buy__link">Buy</div>
-					</div>
-				</div>
+		<div class="shop-slider-special-holder">
+			<!-- shop-slider -->
+			<div id="shopSlider" class="owl-carousel">
+				@@include('shop-items/item-01.html')
+				@@include('shop-items/item-02.html')
+				@@include('shop-items/item-03.html')
 			</div>
-			<!-- END - Board -->
-
-			<!-- Board -->
-			<div class="board">
-				<div class="board__img-holder">
-					<img class="board__img" src="img/boards/board-2.png" alt="Surfing board">
-				</div>
-
-				<div class="board-desc">
-					<div class="board__cat">Surfboards</div>
-					<div class="board__title">Emery NEM XF</div>
-					
-					<div class="board-buy">
-						<div class="board-buy__price">$950</div>
-						<div class="board-buy__link">Buy</div>
-					</div>
-				</div>
-			</div>
-			<!-- END - Board -->
-
-			<!-- Board -->
-			<div class="board">
-				<div class="board__img-holder">
-					<img class="board__img" src="img/boards/board-3.png" alt="Surfing board">
-				</div>
-
-				<div class="board-desc">
-					<div class="board__cat">Funboards</div>
-					<div class="board__title">Agency GROM</div>
-					
-					<div class="board-buy">
-						<div class="board-buy__price">$670</div>
-						<div class="board-buy__link">Buy</div>
-					</div>
-				</div>
-			</div>
-			<!-- END - Board -->
 		</div>
+		
+	</div>
+	<!-- END - Shop-slider -->
 
+	<!-- Container -->
+	<div class="container">
+		<div class="shopSlider-controls">
+			<div id="shopSliderLeft" class="shopSlider-arrow shopSlider-arrow--left">
+				<img src="img/controls/boards-left.svg" alt="Prev">
+			</div>
+			<div id="shopSliderRight" class="shopSlider-arrow shopSlider-arrow--right">
+				<img src="img/controls/boards-right.svg" alt="Next">
+			</div>
+		</div>
+	</div>
+	<!-- END - Container -->	
+
+	<!-- Container -->
+	<div class="container">
 		<div class="shop-link-wrapper">
 			<a href="#!" class="read-more-link">Show All</a>
 		</div>
-
 	</div>
+	<!-- END - Container -->
+
 </section>
 <!-- END - shop -->
