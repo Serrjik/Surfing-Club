@@ -7,9 +7,17 @@ body {
 }
 
 .container {
-	width: 1224px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	
+	@media (min-width: 1254px) {
+		width: 1224px;
+		padding-right: 0;
+		padding-left: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .flex-end {
