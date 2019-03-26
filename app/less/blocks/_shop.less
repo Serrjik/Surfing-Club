@@ -1,8 +1,13 @@
 .shop {
 	position: relative;
-	padding-top: 95px;
-	padding-bottom: 110px;
+	padding-top: 95px/2;
+	padding-bottom: 110px/2;
 	
+	@media (min-width: 1254px) {
+		padding-top: 95px;
+		padding-bottom: 110px;
+	}
+
 	&:before {
 		position: absolute;
 		content: "";
@@ -30,13 +35,16 @@
 .shop-slider-special-holder {
 	position: absolute;
 	left: 0;
-	right: -85px;
+	right: 0;
+	
+	@media (min-width: 1394px) {
+		right: -85px;
+	}
 }
 
 .shop-slider {
 	display: flex;
 	justify-content: space-between;
-	// height: 200px;
 	margin-top: 50px;
 	margin-bottom: 80px;
 }
@@ -51,13 +59,17 @@
 
 .shopSlider-arrow {
 	position: absolute;
-	bottom: calc(120px + 80px);
+	bottom: 120px;
 	width: 40px;
 	height: 48px;
 	padding: 15px;
 	// background-color: red;
 	z-index: 9;
 	cursor: pointer;
+	
+	@media (min-width: 650px) {
+		bottom: calc(120px + 80px);
+	}
 
 	img {
 		vertical-align: top;
@@ -65,21 +77,50 @@
 }
 
 .shopSlider-arrow--left {
-	left: -70px;
-	transform: translate(-100%, 0);
+	left: -15px;
+	
+	@media (min-width: 650px) {
+		left: 0;
+		transform: translate(100%, 0);
+	}
+
+	@media (min-width: 1334px) {
+		left: 0;
+		transform: translate(-100%, 0%);
+	}
 }
 
 .shopSlider-arrow--right {
-	right: -70px;
-	transform: translate(100%, 0);
+	right: -15px;
+	
+	@media (min-width: 650px) {
+		right: 0;
+		transform: translate(-100%, 0);
+	}
+
+	@media (min-width: 1334px) {
+		right: 0;
+		transform: translate(100%, 0%);
+	}
 }
 
 .board {
 	position: relative;
-	width: 435px;
+	width: 250px;
 	height: 435px;
 	margin-top: 130px;
-	// background-color: #339;
+	margin-left: auto;
+	margin-right: auto;
+	
+	@media (min-width: 650px) {
+		padding-left: 185px;
+		width: 435px + 185px;
+	}
+
+	@media (min-width: 1254px) {
+		margin-left: 0;
+		padding-left: 0;
+	}
 }
 
 .board__img-holder {
@@ -89,6 +130,14 @@
 	width: 250px;
 	height: 320px;
 	background-color: #ececec;
+	
+	@media (min-width: 650px) {
+		left: 185px;
+	}
+
+	@media (min-width: 1254px) {
+		left: 0;
+	}
 }
 
 .board__img {
@@ -101,9 +150,20 @@
 .board-desc {
 	position: absolute;
 	top: 196px;
-	left: 216px;
+	right: 0;
 	width: 210px;
-	// background-color: #ecb8b8;
+	z-index: 9;
+	text-align: right;
+	
+	@media (min-width: 650px) {
+		right: auto;
+		left: 216px + 185px;
+		text-align: left;
+	}
+
+	@media (min-width: 1254px) {
+		left: 216px;
+	}
 }
 
 .board__cat {
