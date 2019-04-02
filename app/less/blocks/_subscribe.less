@@ -11,7 +11,6 @@
 		width: 100%;
 		height: 1335px;
 		z-index: -1;
-		// background-color: #b2d7f4;
 		background-image: url("../img/bg/bg-lines.png"), url("../img/bg/bg-surfer.jpg");
 		background-repeat: repeat-y, no-repeat;
 		background-position: center, center;
@@ -51,12 +50,8 @@
 		
 		@media (min-width: 1254px) {
 			height: 100px;
+		}
 	}
-	}
-}
-
-.title-desc {
-
 }
 
 .subscribe-form {
@@ -72,7 +67,9 @@
 	text-transform: uppercase;
 	letter-spacing: 5.4px;
 	
-	width: 540px;
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+	width: calc(100% - 50px);
 	height: 50px;
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
 	background-color: #f5f5f5;
@@ -81,6 +78,10 @@
 	padding-left: 30px;
 	transition: 0.2s ease-in;
 	
+	@media (min-width: 570px) {
+		width: 540px;
+	}
+
 	&:active,
 	&:focus {
 		border: 1px solid rgba(97, 97, 97, 0.15);
